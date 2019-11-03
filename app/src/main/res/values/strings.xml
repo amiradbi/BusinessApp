@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BusinessApp</string>
+    <string name="show_on_map_button">show on map</string>
+    <string name="address_label">Address:</string>
+    <string name="rate_label">Rate:</string>
+    <string name="rate_text">%1$s (%2$s reviews)</string>
+    <string name="business_name_label">Business name:</string>
 </resources>

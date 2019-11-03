@@ -2,6 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.businessapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".application.MyApp"
         android:allowBackup="true"

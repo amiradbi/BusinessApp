@@ -1,7 +1,8 @@
 package com.example.businessapp.application.injection.modules
 
-import com.example.businessapp.application.injection.interceptor.TokenInterceptor
 import com.example.businessapp.BuildConfig
+import com.example.businessapp.application.injection.interceptor.TokenInterceptor
+import com.example.businessapp.data.BusinessSearchService
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -56,4 +57,10 @@ class NetworkModule {
                 }
             }
     // endregion
+
+    @Provides
+    @Singleton
+    fun provideBusinessSearchService(client: OkHttpClient): BusinessSearchService =
+            buildRetrofit(client)
+                    .create(BusinessSearchService::class.java)
 }
